@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dom</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Dom</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 May 2021 22:25:06 +0100</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome</title>
+      <link>http://example.org/posts/welcome/</link>
+      <pubDate>Fri, 07 May 2021 22:25:06 +0100</pubDate>
+      
+      <guid>http://example.org/posts/welcome/</guid>
+      <description>Hi, Hey, Hello
+Welcome to my new site where I write about computer things&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

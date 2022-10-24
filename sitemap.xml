@@ -2,20 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://carbonbaseddudeform.github.io/</loc>
-    <lastmod>2021-05-07T22:25:06+01:00</lastmod>
-  </url><url>
-    <loc>https://carbonbaseddudeform.github.io/posts/</loc>
-    <lastmod>2021-05-07T22:25:06+01:00</lastmod>
-  </url><url>
-    <loc>https://carbonbaseddudeform.github.io/posts/welcome/</loc>
-    <lastmod>2021-05-07T22:25:06+01:00</lastmod>
-  </url><url>
-    <loc>https://carbonbaseddudeform.github.io/portfolio/</loc>
+    <loc>/portfolio/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://carbonbaseddudeform.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://carbonbaseddudeform.github.io/tags/</loc>
+    <loc>/</loc>
+  </url><url>
+    <loc>/tags/</loc>
   </url>
 </urlset>

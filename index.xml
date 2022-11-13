@@ -6,7 +6,16 @@
     <description>Recent content on Dominic Musgrave</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Nov 2022 22:05:12 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Nov 2022 12:59:48 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automated Testing in Game Development</title>
+      <link>/posts/automated-testing/</link>
+      <pubDate>Sun, 13 Nov 2022 12:59:48 +0000</pubDate>
+      
+      <guid>/posts/automated-testing/</guid>
+      <description>At Rare, we use automated testing when developing games and it is hugely beneficial. This is a great tech talk on it.</description>
+    </item>
+    
     <item>
       <title>Making a Lorenz Attractor in go</title>
       <link>/posts/lorenz/</link>

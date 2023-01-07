@@ -32,8 +32,8 @@
       
       <guid>/portfolio/</guid>
       <description>Portfolio Sea of Thieves Currently I work on Sea of Thieves in a gameplay team at Rare, having primarily worked on popular updates A Pirate&amp;rsquo;s Life and Season 8&amp;rsquo;s PVP on demand.
-Game Engine for Fun A game engine written in C++ to learn more about low level / internal workings of a game engine and the architectural challenges.
-VMS Image Editor A desktop application written in C# for creating images to be displayed on VMS&amp;rsquo;s</description>
+WaveRider A personal tool for researching that pulls papers from arxiv and financial data from tiingo built with React + Materials and Go.
+Game Engine for Fun A game engine written in C++ to learn more about low level / internal workings of a game engine and the architectural challenges.</description>
     </item>
     
   </channel>

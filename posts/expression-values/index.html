@@ -126,15 +126,13 @@ Values are defined by two independent <a href="http://www.stroustrup.com/termino
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//no longer safe to use lvalue.
 </span></span></span></code></pre></div><p>Here, <code>std::move</code> is used to cast <code>lvalue</code> into an xvalue and avoids any copying. It&rsquo;s important to note that <code>std::move()</code> doesn&rsquo;t perform a move operation, it casts the value to an x value which can be moved.</p>
 <p>It&rsquo;s not too uncommon to see this mistake being made:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Type <span style="color:#a6e22e">function</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Type <span style="color:#a6e22e">function</span>() {
 </span></span><span style="display:flex;"><span>    Type result {};
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> std<span style="color:#f92672">::</span>move(result);
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Usually, this is done as the author wants to take advantage of move semantics and avoid an unnecessary copy.  Incidentally, as the return type for this function is an l value and the returned object has just been cast to an x value, it will now create a copy of it to turn it into an l value. So, by trying to avoid making a copy, a copy has been made. I made this mistake a few years ago when learning about move semantics and wanting to take advantage of them - I want to move it, so I <code>std::move()</code> it.</p>
 <p>What I wanted to do was make use of <a href="https://en.cppreference.com/w/cpp/language/copy_elision">return value optimization, a case of copy elision,</a> which would look like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Type <span style="color:#a6e22e">function</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>Type <span style="color:#a6e22e">function</span>() {
 </span></span><span style="display:flex;"><span>    Type result {};
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> result;
 </span></span><span style="display:flex;"><span>}
@@ -158,7 +156,7 @@ xpert only, or even x-rated.&rdquo; (page 4).</a></p>
 <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3055.pdf">A Taxonomy of Expression Value Categories</a></li>
 <li><a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2009/n3010.pdf">Rvalue References as “Funny” Lvalues</a></li>
 <li><a href="https://learn.microsoft.com/en-us/cpp/c-language/l-value-and-r-value-expressions?view=msvc-170">MS C++ Reference: L-value and R-value Expressions</a></li>
-<li>[C++ Reference: Value Categories](<a href="https://en.cppreference.com/w/cpp/language/value_category#:~:text=Each%20C%2B%2B%20expression%20(an%20operator,prvalue%2C%20xvalue%2C%20and%20lvalue.)">https://en.cppreference.com/w/cpp/language/value_category#:~:text=Each%20C%2B%2B%20expression%20(an%20operator,prvalue%2C%20xvalue%2C%20and%20lvalue.)</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/language/value_category#">C++ Reference: Value Categories</a></li>
 <li><a href="https://learn.microsoft.com/en-us/cpp/cpp/lvalues-and-rvalues-visual-cpp?view=msvc-170">MS Basic Concepts: L-values and R-values</a></li>
 <li><a href="https://www.scs.stanford.edu/~dm/blog/decltype.pdf">C++ Value Categories and decltype demystified by David Mazières</a></li>
 <li><a href="https://isocpp.org/blog/2016/04/quick-q-what-are-rvalues-lvalues-xvalues-glvalues-and-prvalues">Standard C++ Foundation: what are rvalues, lvalues, xvalues, glvalues and prvalues?</a></li>

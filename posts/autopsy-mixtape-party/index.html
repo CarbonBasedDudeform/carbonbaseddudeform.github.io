@@ -108,25 +108,28 @@
       <p>All problems can be solved or worked around but time is limited - it&rsquo;s a question of allocation. A project is succesful if it help users and can sustain itself financially.</p>
 <h1 id="idea">Idea</h1>
 <p>mixtape.party was a web app for creating and sharing playlists platform-agnostically.</p>
-<p>In short, the app evolved as:
-- Playlist migration tool
-- Share Playlist Platform-agnostically
-- Create Playlists Platform-agnostically
-- LLM Creation of Playlists from descriptions</p>
-<p>In long,</p>
-<p>It started  as a tool that I wanted to make to move all my spotify playlists to apple music.</p>
-<p>The idea was to make a tool that could transfer playlists between music streaming platforms to make things more platform agnostic.</p>
-<p>This then evolved into the idea of making it so users could share their playlists with users of any music streaming platform - like sharing mixtapes, hence mixtape.party.</p>
-<p>It then evolved into the idea of creating playlists on the app which could be deployed to any / all music streaming platforms - the use case being, if you are running a music label or popular playlist curator then you can make or update the playlist in one location and deploy to many platforms.</p>
-<p>Finally, I fell into the LLM hype and started getting it to generate playlists from descriptions that could be shared to any platform.</p>
+<p>In short, the app evolved as:</p>
+<ul>
+<li>Playlist migration tool</li>
+<li>Share Playlist Platform-agnostically</li>
+<li>Create Playlists Platform-agnostically</li>
+<li>LLM Creation of Playlists from descriptions</li>
+</ul>
+<p>In long, it started  as a tool that I wanted to make to move all my spotify playlists to apple music.<br>
+The idea was to make a tool that could transfer playlists between music streaming platforms to make things more platform agnostic.<br>
+This then evolved into the idea of making it so users could share their playlists with users of any music streaming platform - like sharing mixtapes, hence mixtape.party.<br>
+It then evolved into the idea of creating playlists on the app which could be deployed to any / all music streaming platforms - the use case being, if you are running a music label or popular playlist curator then you can make or update the playlist in one location and deploy to many platforms.<br>
+Finally, I fell into the LLM hype and started getting it to generate playlists from descriptions that could be shared to any platform.</p>
 <h1 id="tech">Tech</h1>
-<p>It was built with a pragmatic tech stack: Next.js, express.js, firebase realtime database and firebase functions. The reason being it made things simple to focus on building the product. I wanted to just get things done. Next.js on the frontend was a bit of a learning curve but served its purpose well. Express was used on the backend as it made sense to me to keep things in the same language to remove switching and it was compatible with firebase unlike some others I would&rsquo;ve potentially used (Go, Rust). Firebase was chosen for its simplicity; setting up authentication, a database, and deployment takes about an hour. It&rsquo;s super simple aligning with my focus: keep things simple and build.</p>
+<p>It was built with a pragmatic tech stack: Next.js, express.js, firebase realtime database and firebase functions. The reason being it made things simple to focus on building the product. I wanted to just get things done.</p>
+<p>Next.js on the frontend was a bit of a learning curve but served its purpose well. Express was used on the backend as it made sense to me to keep things in the same language to remove switching and it was compatible with firebase unlike some others I would&rsquo;ve potentially used (Go, Rust). Firebase was chosen for its simplicity; setting up authentication, a database, and deployment takes about an hour. It&rsquo;s super simple aligning with my focus: keep things simple and build.</p>
 <h1 id="failure">Failure</h1>
-<p>The most interesting part of this side project was probably why I think it failed.</p>
+<p>The most interesting part of this side project.</p>
 <h2 id="competition">Competition</h2>
 <p>The competition is strong in this market and meets most users demands already. They offer transferring to a <strong>LOT</strong> of different platforms, ways for users to fix incorrect song identification and more (like AI generated playlists). They mostly seem to be developed by small teams of 1 or 2 people with standard price points: $5 for monthly users and free tiers for occasional users. Some, like TuneMyMusic <a href="https://tidal.com/transfer-music">even had platform recommendations</a>.</p>
 <h2 id="finding-customers">Finding Customers</h2>
-<p>Talking about the app idea was often received with &ldquo;wow sounds awesome, tell me when its ready!&rdquo; and it&rsquo;s variations but the reality was nobody was really interested. It solved a once in a decade issue for a small number of people. After reading <a href="https://amzn.to/4fojqcx">The Mom Test</a> I realised I should&rsquo;ve been asking people: &ldquo;yeah, have you tried any of the others that do this?&rdquo; or &ldquo;so you&rsquo;ve looked for something like this before?&rdquo;.</p>
+<p>Talking about the app idea was often received with &ldquo;wow sounds awesome, tell me when its ready!&rdquo; and it&rsquo;s variations but the reality was nobody was really interested. It solved a once in a decade issue for a small number of people.</p>
+<p>After reading <a href="https://amzn.to/4fojqcx">The Mom Test</a> I realised I should&rsquo;ve been asking people: &ldquo;yeah, have you tried any of the others that do this?&rdquo; or &ldquo;so you&rsquo;ve looked for something like this before?&rdquo;.</p>
 <p>In hindsight, it&rsquo;s evident the people telling me this was a good idea had never looked for an app because they could&rsquo;ve just used one of the existing tools. The core issue was that this wasn’t a pressing problem for most users, and those who faced it rarely considered paying for a solution.</p>
 <h2 id="crazy-low-prices">Crazy! Low! Prices!</h2>
 <p>An obvious idea I had to try and get some customers in the door was set the price lower than competitors. The cost of running the app was cheap enough that a single user paying a fraction of what the competitors cost could run it for a few months at least. Unfortunately, this doesn&rsquo;t matter if the customers aren&rsquo;t aware of the prices.</p>
@@ -135,17 +138,19 @@
 <h2 id="adverts">Adverts</h2>
 <p>Problem: No users as people don&rsquo;t know about the app.</p>
 <p>Solution: Advertising!</p>
-<p>Unfortunately, most people seemed to be arriving at the site due to looking for playlists to listen to or their own playlists. They were likely getting confused about what had happened. This actually led to two ideas:
-- make premade playlists for people to listen to on any music platform
-- improve the targeting of the ads</p>
+<p>Unfortunately, most people seemed to be arriving at the site due to looking for playlists to listen to or their own playlists. They were likely getting confused about what had happened. This actually led to two ideas:</p>
+<ul>
+<li>make premade playlists for people to listen to on any music platform</li>
+<li>improve the targeting of the ads</li>
+</ul>
 <p>I implemented the first idea which got some clicks on some playlists but it seemed most people were arriving looking for their own playlists. Finding the right keywords and targeting the right people seemed to be especially difficult.</p>
 <h2 id="network-effect">Network Effect</h2>
 <p>Competitors benefitted greatly from the network effect: word-of-mouth references from previous users.</p>
 <p>This actually gave me a bit of hope as it contradicted what I was learning: that people hadn&rsquo;t looked for a product like this so there wasn&rsquo;t a real demand. There was some demand as other products existed. They not only existed but they did a damn good job. Such a good job, that people would recommend them to anyone who mentioned the were looking for such tools - stopping anyone for looking for any new tools potentially.</p>
-<p>The existing apps strong network of recommendations seemed difficult to overcome. This would probably require working on the product to make it even better for a long time and gaining 1 or 2 customers just so start spreading recommendations. However, I thought the time investment wasn&rsquo;t worth it.</p>
-<p>The network effect is powerful, and breaking into a space with entrenched competitors requires either a revolutionary product or significant time and effort to build trust</p>
+<p>The existing apps strong network of recommendations seemed difficult to overcome. This would probably require working on the product to make it even better for a long time and gaining 1 or 2 customers just so start spreading recommendations.</p>
+<p>However, I felt the time investment wasn’t worth it. This market is highly niche, catering to a small number of power users, and in all likelihood, it is already saturated.</p>
 <h2 id="quality">Quality</h2>
-<p>The app was worse than the competitors. If I&rsquo;m honest. It supported less platforms, had no way of fixing incorrect song lookups, etc. These are all fixable problems with time but it became more apparent that investing more time into this would likely not lead to anything much. Closing the feature gap would have required significant time and resources. I decided it was best to abandon ship, focussing elsewhere.</p>
+<p>The app was worse than the competitors. If I&rsquo;m honest. It supported less platforms, had no way of fixing incorrect song lookups, etc. These are all fixable problems with time but it became more apparent that investing more time into this would likely not lead to anything much. Closing the feature gap would have required significant time and resources. I decided it was best to abandon ship, focusing elsewhere.</p>
 <h1 id="take-aways">Take aways</h1>
 <ul>
 <li>Marketing: focus on targeting the right people and getting the product in front of them.</li>

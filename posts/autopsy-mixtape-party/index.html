@@ -107,12 +107,18 @@
     <div class="post-content">
       <p>All problems can be solved or worked around but time is limited - it&rsquo;s a question of allocation. A project is succesful if it help users and can sustain itself financially.</p>
 <h1 id="idea">Idea</h1>
-<p>mixtape.party was a web app that started as a tool that I wanted to make to move all my spotify playlists to apple music. The idea was to make a tool that could transfer playlists between music streaming platforms to make things more platform agnostic. This then evolved into the idea of making it so users could share their playlists with users of any music streaming platform - like sharing mixtapes, hence mixtape.party. It then evolved into the idea of creating playlists on the app which could be deployed to any / all music streaming platforms - the use case being, if you are running a music label or popular playlist curator then you can make or update the playlist in one location and deploy to many platforms. Finally, I fell into the LLM hype and started getting it to generate playlists from descriptions that could be shared to any platform.</p>
+<p>mixtape.party was a web app for creating and sharing playlists platform-agnostically.</p>
 <p>In short, the app evolved as:
-1. Playlist migration tool
-2. Share Playlist Platform-agnostically
-3. Create Playlists Platform-agnostically
-4. LLM Creation of Playlists from descriptions</p>
+- Playlist migration tool
+- Share Playlist Platform-agnostically
+- Create Playlists Platform-agnostically
+- LLM Creation of Playlists from descriptions</p>
+<p>In long,</p>
+<p>It started  as a tool that I wanted to make to move all my spotify playlists to apple music.</p>
+<p>The idea was to make a tool that could transfer playlists between music streaming platforms to make things more platform agnostic.</p>
+<p>This then evolved into the idea of making it so users could share their playlists with users of any music streaming platform - like sharing mixtapes, hence mixtape.party.</p>
+<p>It then evolved into the idea of creating playlists on the app which could be deployed to any / all music streaming platforms - the use case being, if you are running a music label or popular playlist curator then you can make or update the playlist in one location and deploy to many platforms.</p>
+<p>Finally, I fell into the LLM hype and started getting it to generate playlists from descriptions that could be shared to any platform.</p>
 <h1 id="tech">Tech</h1>
 <p>It was built with a pragmatic tech stack: Next.js, express.js, firebase realtime database and firebase functions. The reason being it made things simple to focus on building the product. I wanted to just get things done. Next.js on the frontend was a bit of a learning curve but served its purpose well. Express was used on the backend as it made sense to me to keep things in the same language to remove switching and it was compatible with firebase unlike some others I would&rsquo;ve potentially used (Go, Rust). Firebase was chosen for its simplicity; setting up authentication, a database, and deployment takes about an hour. It&rsquo;s super simple aligning with my focus: keep things simple and build.</p>
 <h1 id="failure">Failure</h1>

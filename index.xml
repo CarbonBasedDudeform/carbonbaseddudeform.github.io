@@ -6,8 +6,15 @@
     <description>Recent content on Dominic Musgrave</description>
     <generator>Hugo 0.125.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jan 2024 18:40:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2024 20:13:52 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autopsy of Mixtape.Party: Lessons from a Failed Side Project</title>
+      <link>/posts/autopsy-mixtape-party/</link>
+      <pubDate>Wed, 13 Nov 2024 20:13:52 +0000</pubDate>
+      <guid>/posts/autopsy-mixtape-party/</guid>
+      <description>This article reflects on the journey and lessons learned from developing mixtape.party. Despite its failure, the project provided insights into market validation, competition, and the importance of targeted marketing and time allocation.</description>
+    </item>
     <item>
       <title>Expression Value Categories in C&#43;&#43; - I like to move it move it.</title>
       <link>/posts/expression-values/</link>

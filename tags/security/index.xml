@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Dominic Musgrave</title>
+    <link>/tags/security/</link>
+    <description>Recent content in Security on Dominic Musgrave</description>
+    <generator>Hugo 0.125.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Jun 2025 18:44:05 +0100</lastBuildDate>
+    <atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fuzzy Ladybirds: Overflowing Stacks</title>
+      <link>/posts/ladybird-fuzz/</link>
+      <pubDate>Tue, 03 Jun 2025 18:44:05 +0100</pubDate>
+      <guid>/posts/ladybird-fuzz/</guid>
+      <description>Tl;DR Sometimes boredom leads to fuzzing. Sometimes fuzzing leads to findings. Findings turn into PoCs, PoCs into disclosures—only to discover the issue’s already known. You reflect, wonder if you should’ve done something more productive, then move on.&#xA;Ladybird Ladybird is an independent browser stemming from SerenityOS. Basically, it&amp;rsquo;s open-source and written in C++ so I was interested as:&#xA;I know C++, I know a lot of its pitfalls and quirky behaviours.</description>
+    </item>
+  </channel>
+</rss>

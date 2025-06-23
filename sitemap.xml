@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2024-12-27T16:53:48+00:00</lastmod>
+    <loc>/tags/asan/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
   </url><url>
-    <loc>/posts/mandarin-have-and-have-not/</loc>
-    <lastmod>2024-12-27T16:53:48+00:00</lastmod>
+    <loc>/tags/browser/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/tags/fuzzing/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/posts/ladybird-fuzz/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/tags/ladybird/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/tags/security/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2025-06-03T18:44:05+01:00</lastmod>
+  </url><url>
+    <loc>/posts/mandarin-have-and-have-not/</loc>
     <lastmod>2024-12-27T16:53:48+00:00</lastmod>
   </url><url>
     <loc>/posts/autopsy-mixtape-party/</loc>
@@ -26,7 +47,5 @@
     <loc>/portfolio/</loc>
   </url><url>
     <loc>/categories/</loc>
-  </url><url>
-    <loc>/tags/</loc>
   </url>
 </urlset>
